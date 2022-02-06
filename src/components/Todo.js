@@ -75,6 +75,7 @@ export default function Todo(props) {
             </div>
             <div className="btn-group">
               <button type="button"
+               data-testid="edit"
                className="btn" 
                onClick={() => setEditing(true)}
                ref={editButtonRef}>

@@ -17,7 +17,7 @@ function Form(props) {
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
-        <label htmlFor="new-todo-input" className="label__lg">
+        <label htmlFor="new-todo-input" className="label__lg" data-testid="need_to_be_added">
           What needs to be done?
         </label>
       </h2>
@@ -26,6 +26,7 @@ function Form(props) {
         id="new-todo-input"
         className="input input__lg"
         name="text"
+        placeholder="Add a new test here..."
         autoComplete="off"
         value={name}
         onChange={handleChange}
